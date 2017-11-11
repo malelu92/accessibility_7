@@ -6,7 +6,7 @@ var interval = null;
 
 $(document).ready(function() {
   $("#thebutton").click(function() {
-  	alert("I was clicked!");
+  	alert("I was clicked sdasld!");
   })
 
   $("body").append("<input type='button' class='scrolldown' value='down'>");
@@ -73,7 +73,10 @@ $(document).ready(function() {
 
           $("#vertical-scanbar").css("left", x+"px");
         }, 100);
-      } else if(state=="horizontalscan") {
+      } 
+      else if(state=="horizontalscan") {
+
+        state = "none";
         var offset = $("#vertical-scanbar").offset();
         var x = offset.left + $("#vertical-scanbar").width()/2.0;
 
