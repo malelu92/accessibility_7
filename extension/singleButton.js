@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
+
 var horizontalmovement = "down"; // up
 var verticalmovement = "right"; // left, right
 var state = "none";  // verticalscan, horizontalscan, none
@@ -120,63 +117,3 @@ function simulateClick(element) {
   dispatchEvent(element, 'click');
   dispatchEvent(element, 'mouseup');
 };
-
-</script>
-<style>
-
-.scanbar {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  display: none;
-}
-#horizontal-scanbar {
-  width: 100%;
-  height: 5px;
-  border-top: 1px solid #555555;
-  border-bottom: 1px solid #555555;
-}
-#vertical-scanbar {
-  height: 100%;
-  width: 5px;
-  border-left: 1px solid #555555;
-  border-right: 1px solid #555555;
-}
-.click {
-  position: fixed;
-  z-index: 105;
-  border: 3px solid red;
-  border-radius: 2px;
-  width: 2px;
-  height: 2px;
-}
-.scrolldown {
-  position: fixed;
-  right: 0;
-  bottom: 50px;
-  width: 50px;
-  height: 50px;
-  background: #000;
-  color: white;
-  text-align: center;
-  z-index: 98;
-}
-</style>
-</head>
-<body>
-<p>
-<input id="thebutton" type="button" value="I'm a button">
-</p>
-<p>
-<a href="http://www.cmu.edu">Carnegie Mellon University</a>
-</p>
-<p>
-<input type="text" value="whatever">
-</p>
-<img src="http://theoutpostbaltimore.com/wp-content/uploads/2017/08/Outpost-Rabbit.jpg" alt="no alt because I'm a jerk">
-<div class="scanbar" id="horizontal-scanbar"></div>
-<div class="scanbar" id="vertical-scanbar"></div>
-<input type="button" class="scrolldown" value="down">
-</body>
-</html>

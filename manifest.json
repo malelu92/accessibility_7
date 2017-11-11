@@ -3,13 +3,13 @@
   "name": "Access Reader",
   "minimum_chrome_version": "24.0.1307.0",
   "version": "0.0.1",
-  "homepage_url": "http://www.accessibilitycourse.com",
+  "homepage_url": "https://malelu92.github.io/accessibility_7/",
   "icons": {
   },
   "content_scripts": [
     {
       "matches": [
-        "http://www.accessibilitycourse.com/*"
+        "https://malelu92.github.io/accessibility_7/*"
       ],
       "js": [
           "scripts/jquery.min.js",
