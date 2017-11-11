@@ -13,9 +13,9 @@
       ],
       "js": [
           "scripts/jquery.min.js",
-          "scripts/reader.js"
+          "scripts/singleButton.js"
       ],
-      "css": ["css/reader.css"],
+      "css": ["css/singleButton.css"],
       "run_at": "document_idle"
     }
   ]
